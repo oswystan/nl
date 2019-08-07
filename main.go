@@ -52,7 +52,7 @@ func main() {
 
 	conn, err := udp_newconn(ip)
 	if err != nil {
-		fmt.Printf("fail to dail udp\n")
+		fmt.Printf("%s\n", err)
 		os.Exit(1)
 	}
 
